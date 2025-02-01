@@ -33,7 +33,7 @@
     }
 
     .section-heading{
-        @apply max-w-[540px] mx-auto
+        @apply md:max-w-[540px] mx-auto;
     }
 
     .card{
