@@ -18,6 +18,8 @@ export const Hero = () => {
     target: heroRef,
     offset: ["start end", "end start"],
   });
+
+  
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
 
@@ -72,11 +74,15 @@ export const Hero = () => {
                 translateY: translateY
               }}
             />
-            <Image
-              src={Noodle}
+            <motion.img
+              src={Noodle.src}
               alt="Noodle image"
               width={220}
               className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
+              style={{
+                rotate: 30,
+                translateY: translateY
+              }}
             />
           </div>
         </div>
